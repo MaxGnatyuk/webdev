@@ -1,3 +1,35 @@
-p{
-    color: blue;
+body{
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    font-size: 14pt;
+    line-height: 24pt;
+}
+
+.site-nav{
+    list-style: none;
+}
+
+.site-nav a:hover{
+    color: #03a9f4;
+}
+
+.site-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+}
+
+.main-content{
+    list-style: none;
+}
+
+.tag{
+    line-height: 17pt;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.main-content-article-header{
+    font-size: 30pt;
+    line-height: 36pt;
 }
