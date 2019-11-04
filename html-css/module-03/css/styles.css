@@ -1,11 +1,11 @@
 /** {
     outline: 1px solid red;
 }*/
-*, 
+/**, 
 *::before, 
 *::after{
     box-sizing: inherit:
-}
+}*/
 .container{
     width: 901px;
     margin: 0 auto;
