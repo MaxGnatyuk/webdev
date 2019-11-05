@@ -1,22 +1,22 @@
-/**, 
-*::before, 
-*::after{
-    box-sizing: inherit:
-}*/
-.container {
-    width: 900px;
-    margin: 0 auto;
-}
-
 html {
     box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
 }
 
 body {
     font-family: 'Playfair Display', serif;
     color: #626262;
     font-size: 0;
-    line-height: 24pt;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
 }
 
 .header {
@@ -27,9 +27,11 @@ body {
 
 .site-nav {
     list-style: none;
-    font-size: 11pt;
+    font-size: 14px;
+    line-height: 24px;
     margin: 0 126px;
     text-align: center;
+    padding-inline-start: 0;
 }
 
 .menu-item a:hover,
@@ -46,7 +48,7 @@ body {
     /*height: 165px;*/
     text-align: center;
     /* line-height: 165px;*/
-    margin: 66px 0 94px 0;
+    margin: 69px 0 97px 0;
 }
 
 .menu-item:last-child {
@@ -54,12 +56,12 @@ body {
 }
 
 .tag {
-    font-size: 10pt;
-    line-height: 17pt;
+    font-size: 14px;
+    line-height: 17px;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .main-content {
@@ -69,9 +71,15 @@ body {
     padding: 0;
 }
 
+.main-content-ul{
+    padding-inline-start: 0;
+}
+
 .main-content-article-header {
-    font-size: 22pt;
-    line-height: 26pt;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-block-start: 0;
     margin-bottom: 27px;
 }
 
@@ -88,29 +96,25 @@ body {
     font-size: 0;
 }
 
-.main-content-article p {
-    font-size: 10pt;
-}
-
 .main-content-article:nth-child(2n) {
     margin-right: 0;
 }
 
 .main-content-article img {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
-/*button 164*60*/
 .button-style {
     display: block;
     border: 1px solid #626262;
     background-color: #fff;
-    padding: 16px 32px;
+    padding: 17px 32px;
     font-family: 'Playfair Display', serif;
-    font-size: 15pt;
+    font-size: 20px;
+    line-height: 24px;
     color: #626262;
-    margin: 41px auto 70px;
+    margin: 35px auto 70px;
     cursor: pointer;
 }
 
@@ -121,7 +125,7 @@ body {
 }
 
 .main-content-article {
-    margin-bottom: 127px;
+    margin-bottom: 115px;
 }
 
 .main-content-article:nth-last-of-type(-n+2) {
@@ -130,7 +134,7 @@ body {
 
 .text {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 24px;
 }
 
 .img{
