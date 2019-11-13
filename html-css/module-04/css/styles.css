@@ -6,6 +6,7 @@ html {
 *::before, 
 *::after {
     box-sizing: inherit;
+    outline: 1px solid red;
 }
 
 img {
@@ -16,7 +17,136 @@ img {
     
 body {
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Roboto', sans-serif;*/
     color: #626262;
     font-size: 0;
+}
+
+
+.container{
+    width:1110px;
+    margin:0 auto;
+}
+
+.logo{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #555252;
+    float:left;
+    margin-top: 32px;
+}
+.logo::before{
+    content: '\004D';
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.navigation{
+    float:right;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.navigation li{
+    float: left;
+    margin-bottom: 86px;
+}
+.nav-item a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+    color: #0f0101;
+    line-height: 32px;
+    padding: 0 17px;
+}
+.nav-item a:hover,
+.nav-item a:focus{
+    color: #1abc9c;
+}
+.navigation.nav-item a:last-child{
+    padding-right:0;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.title-section{
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.title-section::after{
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 24px auto;
+}
+.product-list{
+    display: block;
+    width: 1110px;
+    padding-inline-start: 0;
+}
+.product-item{
+    display: block;
+    width: 255px;
+    height: 322px;
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.product-item a{
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.product-item img{
+    width: 255px;
+    height: 282px;
+}
+.product-title{
+    width: 201px;
+    height: 40px;
+    background-color: #323232;
+    float: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding:10px 0 0 13px;
+}
+.product-title:hover,
+.product-title:focus{
+    background-color: #1abc9c;
+}
+.product-price{
+    width: 54px;
+    height: 40px;
+    background-color: #8c8c8c;
+    float: right;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding:10px 0 0 13px;
+}
+.product-price:hover,
+.product-price:focus{
+background-color: #7fd9c7;
+}
+/*.product-item::before{
+    background-image: url();
+}*/
+.product-item:nth-child(4n){
+    margin-right: 0;
 }
