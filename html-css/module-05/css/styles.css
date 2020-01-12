@@ -58,7 +58,7 @@ nav{
 
 .navigation li {
     float: left;
-    margin-bottom: 86px;
+    margin-bottom: 37px;
 }
 
 .nav-item {
@@ -101,6 +101,10 @@ nav{
     margin-bottom: 80px;
 }
 
+.products {
+    background-color: #e9f0fd;
+    /*box-sizing: */
+}
 .product-list {
     display: block;
     width: 1110px;
