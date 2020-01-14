@@ -218,11 +218,6 @@ button.cart {
    
 }
 
-button:hover {
-    background-color: #1abc9c;
-    border-color: #1abc9c;
-}
-
 button.like,
 button.shuffle,
 button.clock {
@@ -253,8 +248,39 @@ button.clock {
     top: 80px; 
  }
 
- button:hover {
+button.like:hover,
+button.shuffle:hover,
+button.clock:hover,
+button.cart:hover  {
     background-color: #1abc9c;
     border-color: #1abc9c;
     cursor: pointer;
+}
+
+.slider{
+    position: relative;
+    height: 600px;
+    weight: 190px;
+}
+
+button.slider-ctrl{
+    position:absolute;
+    width: 104px;
+    height: 104px;
+    border: 1px solid #1abc9c;
+    background: #1abc9c;
+    opacity: 0.651;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-ctrl-next{
+    right:0;
+}
+.slider-ctrl:hover{
+    opacity: 1;
+}
+
+.slider-img{
+    height: 600px;
+    weight: 1900px;
 }
