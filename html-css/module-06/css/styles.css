@@ -42,6 +42,7 @@ header{
 }
 main{
     flex-grow: 1;
+    position: relative;
 }
 footer{
     height: 60px;
@@ -105,5 +106,29 @@ footer{
     content: '';
     margin: 0 auto;
     bottom:-12px;
+}
+.p-title{
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    color:#333333;
+    text-align: center;
+}
+.h2-title{
+    font-size: 30px;
+    color:#333333;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.h2-title::after{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0); 
 }
   
