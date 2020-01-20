@@ -225,3 +225,60 @@ p.services-text{
     font-weight: 300;
     font-style: italic;
 }
+
+a.members-item{
+    text-decoration: none;
+}
+
+
+
+.members-item{
+    position: relative;
+}
+/*.members-img-hover-blue{
+    display: block;
+    position: absolute;
+    top: 0;
+    width:380px;
+    height:470px;
+    background-color: #95e1d3;
+    opacity: 0;
+    z-index: 1;
+}*/
+
+/*.members-item:hover .members-img-hover-blue,
+.members-item:focus .members-img-hover-blue{
+    display: block;
+    position: absolute;
+    top: 0;
+    width:380px;
+    height:470px;
+    background-color: #95e1d3;
+    opacity: 0;
+    z-index: 1;
+}*/
+
+.members-img-hover-grad{
+
+}
+/*.members-item:hover .members-item-wrap,
+.members-item:focus .members-item-wrap{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}*/
+.members-item:hover .members-img-hover-grad,
+.members-item:focus .members-img-hover-grad{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width:380px;
+    height:470px;
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+  
