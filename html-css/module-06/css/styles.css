@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    width: 1110px;
+    width: 1200px;
     margin: 0 auto;
 }
 header{
@@ -107,11 +107,20 @@ footer{
     margin: 0 auto;
     bottom:-12px;
 }
-.p-title{
+.p-title-services{
     font-family: 'Kaushan Script';
     font-size: 24px;
     color:#333333;
     text-align: center;
+    margin-top: 94px;
+}
+.p-title-members{
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    color:#333333;
+    text-align: center;
+    /*margin-top: 94px;*/
+    margin-block-start: 0;
 }
 .h2-title{
     font-size: 30px;
@@ -119,6 +128,7 @@ footer{
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-bottom: 67px;
 }
 .h2-title::after{
     display: block;
@@ -127,13 +137,51 @@ footer{
     background-color: #f38181;
     content: '';
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 50%;
     transform: translate(-50%, 0); 
 }
-.categories{
+.services{
     position: relative;
 }
 .members{
     position: relative;
+}
+
+.services-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+.services-item{
+    position: relative;
+    display: block;
+    width: 383px;
+    height: 165px;
+}
+
+h3 {
+    font-size: 14px;
+    color:#333333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    /*text-align: center;*/
+}
+
+.wrapper{
+    padding-left: 92px;
+}
+.wrapper img {
+    position: absolute;
+    left:30px;
+}
+
+p.services-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color:#999999;
+    font-weight: 400;
 }
