@@ -205,9 +205,11 @@ p.services-text{
     align-content: space-around;
 }
 .members-img{
+    display: block;
     width:380px;
     height:470px;
     margin-bottom: 27px;
+    z-index: 1;
 }
 .members-item p{
     text-align: center;
@@ -234,17 +236,59 @@ a.members-item{
 
 .members-item{
     position: relative;
+    
+    width:380px;
+    height:470px;
 }
-/*.members-img-hover-blue{
+
+.members-item-wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    /* transition-property: 
+        top,
+        left;
+    transition-duration: 0.5s; */
+}
+
+.members-item:hover .members-item-wrapper,
+.members-item:focus .members-item-wrapper{
+    transition-property: 
+        top,
+        left;
+        
+    transition-duration: 0.2s;
+    top: -10px;
+    left: -10px;
+}
+.members-img-hover-blue{
     display: block;
     position: absolute;
     top: 0;
+    left: 0;
     width:380px;
     height:470px;
     background-color: #95e1d3;
     opacity: 0;
-    z-index: 1;
-}*/
+    z-index: -100;
+}
+.members-item:hover .members-img-hover-blue,
+.members-item:focus .members-img-hover-blue{
+    transition-property: 
+        top,
+        left;
+        
+    transition-duration: 0.2s;
+    top: 10px;
+    left: 10px;
+    opacity: 1;
+}
+.members-card-sign{
+    position: absolute;
+    top:482px;
+    left:50%;
+    transform: translateX(-50%);
+}
 
 /*.members-item:hover .members-img-hover-blue,
 .members-item:focus .members-img-hover-blue{
@@ -278,7 +322,7 @@ a.members-item{
     background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     opacity: 0.9;
-    z-index: 1;
+    z-index: 2;
 }
 
 .share{
@@ -315,3 +359,7 @@ a.members-item{
 .share-item:focus{
     background-color: #95e1d3;
 }
+/* .members-item:hover .members-img,
+.members-item:focus .members-img{
+
+} */
