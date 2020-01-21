@@ -310,3 +310,8 @@ a.members-item{
 .members-item:focus .share{
     opacity: 1;
 }
+
+.share-item:hover,
+.share-item:focus{
+    background-color: #95e1d3;
+}
