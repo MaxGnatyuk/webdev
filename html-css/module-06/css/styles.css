@@ -270,8 +270,8 @@ a.members-item{
 .members-item:hover .members-img-hover-grad,
 .members-item:focus .members-img-hover-grad{
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: 0px;
+    left: 0px;
     width:380px;
     height:470px;
     background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
@@ -281,4 +281,32 @@ a.members-item{
     z-index: 1;
 }
 
-  
+.share{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 208px;
+    left: 79px;
+    opacity: 0;
+    
+    z-index: 2;
+    /*width: 224px;
+    height: 56px;*/
+}
+.share-item{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+}
+.share-item img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.members-item:hover .share,
+.members-item:focus .share{
+    opacity: 1;
+}
