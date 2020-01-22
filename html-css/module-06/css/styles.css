@@ -45,7 +45,8 @@ main{
     position: relative;
 }
 footer{
-    height: 60px;
+    position: relative;
+    /* height: 60px; */
 }
 .logo{
     color:#95e1d3;
@@ -257,7 +258,7 @@ a.members-item{
         top,
         left;
         
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     top: -10px;
     left: -10px;
 }
@@ -363,3 +364,9 @@ a.members-item{
 .members-item:focus .members-img{
 
 } */
+
+.footer-descr{
+    color:#333333;
+    font-size: 14px;
+    
+}
