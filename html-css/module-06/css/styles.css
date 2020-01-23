@@ -263,7 +263,7 @@ a.members-item {
     transition-property:
         top,
         left;
-    transition-duration: 0.7s;
+    transition-duration: 0.3s;
     top: -10px;
     left: -10px;
 }
@@ -271,8 +271,8 @@ a.members-item {
 .members-img-hover-blue {
     display: block;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: 0;
+    left: 0;
     width: 380px;
     height: 470px;
     background-color: #95e1d3;
@@ -282,13 +282,6 @@ a.members-item {
 
 .members-item:hover .members-img-hover-blue,
 .members-item:focus .members-img-hover-blue {
-    transition-property:
-        top,
-        left,
-        opacity;
-    transition-duration: 0.5s;
-    top: 10px;
-    left: 10px;
     opacity: 1;
 }
 
@@ -364,7 +357,6 @@ footer {
 .footer-link {
     text-decoration: none;
     color: #f38181;
-
 }
 
 .wrapper-footer {

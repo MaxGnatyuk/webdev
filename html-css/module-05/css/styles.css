@@ -92,13 +92,13 @@ nav {
 }
 
 .title-section::after {
-    display: block;
-    width: 164px;
-    height: 7px;
-    background-color: #1abc9c;
-    content: '';
-    margin: 24px auto;
-    margin-bottom: 80px;
+        display: block;
+        width: 164px;
+        height: 7px;
+        background-color: #1abc9c;
+        content: '';
+        margin: 24px auto;
+        margin-bottom: 80px;
 }
 
 .products {
