@@ -298,6 +298,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items:center;
+    cursor: pointer;
 }
 
 .service-item h3{
@@ -314,6 +315,27 @@ header{
     margin-block-start: 0;
 }
 
+/* .service-item:hover,
+.service-item:focus
+{
+    transition-property: 
+    border,
+    border-radius,
+    background-color,
+    color;
+    transition-duration: 0.5s;
+    border: 1px solid  #fed136;
+    border-radius: 5px;
+    background-color:  #fed136;
+    color: #000000;
+}
+
+.service-item:hover h3,
+.service-item:focus h3
+{
+   
+    color: #ffffff;
+} */
 /* .service-img{
     position: absolute;
     left: 50%;
