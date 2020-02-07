@@ -16,8 +16,8 @@
     <title>Module 7 | GoIT</title>
 </head>
 
-<body class="container">
-    <header>
+<body>
+    <header class="container">
         <div class="logo"><a href="#">Golden</a></div>
         <nav class="nav">
             <div class="nav-item"><a href="#">HOME</a></div>
@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main>
-        <section class="service">
+        <section class="service container">
             <h2 class="h2-services">SERVICES</h2>
             <p class="h2-descr">Proin iaculis purus consequat sem cure.</p>
             <ul class="service-list">
@@ -54,6 +54,27 @@
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
             </ul>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2 class="h2-contact">CONTACT US</h2>
+                <p class="h2-descr">Proin iaculis purus consequat sem cure.</p>
+                <form action="#">
+                    <div class="form-list">
+                        <div class="input-list">
+                            <input type="text" name="name" placeholder="YOUR NAME *" required>
+                            <input type="email" name="email" placeholder="YOUR E-MAIL *" required>
+                            <input type="text" name="subject" placeholder="SUBJECT">
+                        </div>
+                        <div class="textarea">
+                            <textarea name="message" placeholder="YOUR MESSSAGE *"  maxlength="500" required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button>SEND MESSAGE</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 </body>
