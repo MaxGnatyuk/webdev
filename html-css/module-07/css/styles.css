@@ -400,17 +400,8 @@ textarea{
     text-transform: uppercase;
     padding-top: 13px; 
     padding-left: 13px;
-
 }
-/* input::placeholder {
-    padding-top: 13px; 
-    padding-left: 13px;
-} */
 
-/* textarea::placeholder {
-    padding-top: 13px; 
-    padding-left: 13px;
-} */
 input:focus:valid, 
 textarea:focus:valid {
   border: 2px solid green;
@@ -421,4 +412,27 @@ input:focus:invalid,
 textarea:focus:invalid{
     border: 2px solid red;
     outline: none;
+}
+
+button {
+    border: none;
+    border:2px solid rgb(254, 209, 54);
+    border-radius: 5px;
+    background-color: rgb(254, 209, 54);
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+    width: 236px;
+    height: 62px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Montserrat";
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+button:hover,
+button:focus{
+    background-color: transparent;
+    color: rgb(254, 209, 54);
 }
